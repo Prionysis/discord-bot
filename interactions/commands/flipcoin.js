@@ -6,10 +6,6 @@ module.exports = {
         .setDescription("Flips a coin."),
 
     async execute (interaction) {
-        await interaction.reply(
-            `💰 ${
-                Math.floor(Math.random() * 100) % 2 === 0 ? "Tails" : "Heads"
-            }`
-        )
+        await interaction.reply(`💰 ${Math.floor(Math.random() * 100) % 2 === 0 ? "Tails" : "Heads"}`)
     }
 }
