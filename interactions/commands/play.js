@@ -86,10 +86,9 @@ module.exports = {
 
 		const messageEmbed = new MessageEmbed()
 			.setColor("#FF0000")
-			.setAuthor(
-				interaction.user.tag,
-				interaction.user.displayAvatarURL()
-			)
+			.setAuthor({
+				name: interaction.user.tag, iconURL: interaction.user.displayAvatarURL()
+			})
 			.setDescription(`[${result.title}](${result.url})`)
 			.setImage(result.thumbnail.url)
 			.addField("Duration", result.durationRaw, true)
@@ -171,10 +170,9 @@ module.exports = {
 
 					messageEmbed
 						.setColor("#FF0000")
-						.setAuthor(
-							song.requester.tag,
-							song.requester.displayAvatarURL()
-						)
+						.setAuthor({
+							name: song.requester.tag, iconURL: song.requester.displayAvatarURL()
+						})
 						.setImage(song.thumbnail)
 						.setDescription(`[${song.title}](${song.url})`)
 						.addField("Duration", song.duration, true)
