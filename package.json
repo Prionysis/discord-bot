@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bot": "node index.js",
+    "deploy-commands": "node deploy-commands.js"
   },
-  "author": "",
+  "author": "Prionysis",
   "license": "ISC",
   "dependencies": {
     "@discordjs/builders": "^0.6.0",
@@ -17,8 +18,5 @@
     "dotenv": "^16.0.0",
     "libsodium-wrappers": "^0.7.9",
     "play-dl": "^1.0.6"
-  },
-  "devDependencies": {
-    "prettier": "2.4.1"
   }
 }
