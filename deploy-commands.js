@@ -15,7 +15,7 @@ for (const file of commandFiles) {
     commands.push(command.data.toJSON())
 }
 
-const rest = new REST({ version: "9" }).setToken(process.env.TOKEN)``
+const rest = new REST({ version: "9" }).setToken(process.env.TOKEN)
 
 console.log("Started refreshing guild commands...")
 rest.put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
