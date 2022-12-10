@@ -10,11 +10,11 @@
   "author": "Prionysis",
   "license": "ISC",
   "dependencies": {
-    "@discordjs/builders": "^0.6.0",
+    "@discordjs/builders": "^1.4.0",
     "@discordjs/rest": "^0.1.0-canary.0",
     "@discordjs/voice": "^0.6.0",
     "discord-api-types": "^0.23.1",
-    "discord.js": "^13.1.0",
+    "discord.js": "^14.7.1",
     "dotenv": "^16.0.0",
     "libsodium-wrappers": "^0.7.9",
     "play-dl": "^1.0.6"
